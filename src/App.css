@@ -1,11 +1,23 @@
+html { 
+
+}
+
 .app{
-    max-width: 400px; 
-    margin: 10px auto;
+
+    max-width: 800px; 
+    margin: 30px auto;
+    /*background: rgba(9, 45, 87, 0.2);
+
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba(27, 18, 18, 0.18);*/
 }
 
 form{
     display: flex;
     flex-direction: column;
     margin: 20px;
-    gap: 20px
+    gap: 20px;
+
 }

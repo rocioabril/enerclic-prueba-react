@@ -24,7 +24,8 @@ function App() {
               label: attributes.title,
               data: attributes.values.map(item => item.value),
               borderColor: attributes.color,
-              backgroundColor: attributes.color
+              backgroundColor: attributes.color + "50",
+              tension: 0.3,
             },
           ],
         })

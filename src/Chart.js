@@ -7,6 +7,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  Filler
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 
@@ -17,10 +18,12 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  Filler
 );
 
 export const options = {
+  fill: true,
   responsive: true,
   plugins: {
     legend: {
@@ -28,7 +31,7 @@ export const options = {
     },
     title: {
       display: true,
-      text: 'Chart.js Line Chart',
+      text: 'Balance Eléctrico',
     },
   },
 };
