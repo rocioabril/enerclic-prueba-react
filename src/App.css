@@ -1,5 +1,4 @@
 header {
-  height: 100px;
   display: flex;
   align-items: center;
   padding: 30px;
@@ -51,7 +50,6 @@ form label input {
   background-color: #ebebe9;
   border: none;
   border-radius: 25px;
-  height: 45px;
   padding: 15px;
 }
 
@@ -60,7 +58,9 @@ form label input {
   background-color: #5c5fda;
   color: white;
   border: none;
-  height: 45px;
+  font-size: 1rem;
+  padding: 15px;
+  cursor: pointer;
   font-weight: 600;
 }
 
@@ -69,6 +69,7 @@ form label input {
 }
 
 .buttonBuscar:disabled {
+  cursor: default;
   background-color: #a5a5a5;
 }
 
