@@ -10,6 +10,7 @@ import {
   Filler
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
+import "./Chart.css";
 
 ChartJS.register(
   CategoryScale,
@@ -25,6 +26,7 @@ ChartJS.register(
 export const options = {
   fill: true,
   responsive: true,
+  maintainAspectRatio: false,
   plugins: {
     legend: {
       position: 'top',
@@ -40,7 +42,7 @@ const Chart = ({ data }) => {
   if (!data) return;
 
   return (
-    <div>
+    <div className="chart">
       <Line options={options} data={data} />
     </div>
   )
